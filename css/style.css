@@ -1,0 +1,156 @@
+/* css/style.css */
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.splash-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+#startBtn {
+  background: crimson;
+  border: 2px solid gold;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 15px gold;
+}
+
+.app h2 {
+  margin-top: 2rem;
+  color: gold;
+  font-size: 2rem;
+  text-shadow: 0 0 10px crimson, 0 0 20px gold;
+}
+
+.selectors {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+
+.section {
+  margin: 1rem;
+  background-color: #1a1a1a;
+  border: 1px solid crimson;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  width: 200px;
+}
+
+.section img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  border: 2px solid gold;
+}
+
+button {
+  background-color: crimson;
+  border: 1px solid gold;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.result {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: gold;
+  text-shadow: 0 0 10px crimson;
+}
+
+audio {
+  display: none;
+}
+
+/* Car animation around border */
+.car-border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.f1car {
+  position: absolute;
+  width: 50px;
+  animation: driveTrack 12s linear infinite;
+  filter: drop-shadow(0 0 4px gold);
+}
+
+@keyframes driveTrack {
+  0% {
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 50px);
+    transform: rotate(90deg);
+  }
+  50% {
+    top: calc(100% - 50px);
+    left: calc(100% - 50px);
+    transform: rotate(180deg);
+  }
+  75% {
+    top: calc(100% - 50px);
+    left: 0;
+    transform: rotate(270deg);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: rotate(360deg);
+  }
+}
+
+/* Dust trail effect */
+.f1car::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  animation: dust 1s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes dust {
+  0% {
+    opacity: 0.6;
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scale(2);
+  }
+}
