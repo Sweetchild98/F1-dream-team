@@ -6,7 +6,7 @@ Welcome to my interactive web app where YOU get to build your very own Formula O
 
 ## 🚀 Live Demo
 
-👉 [Click here to launch the app](https://sweetchild98.github.io/f1-dream-team/)
+👉 [Click here to launch the app](https://sweetchild98.github.io/Testing1/)
 
 ---
 
@@ -31,3 +31,42 @@ Welcome to my interactive web app where YOU get to build your very own Formula O
 ---
 
 ## 📁 Folder Structure
+KadyBez-C23247-Project-1/
+├── index.html
+├── css/
+│ └── style.css
+├── js/
+│ └── app.js
+├── images/
+│ └── (driver, engine, chassis images, car animation)
+├── sounds/
+│ └── engine-start.mp3, click.mp3
+
+
+---
+
+## 📌 Project Guidelines
+
+This project follows the requirements for **IVWD216 Project 1**:
+- Only JavaScript content from Chapters 1–7 was used
+- Fully original app idea
+- Submitted with all assets and documentation
+
+---
+
+## 👩‍💻 Created By
+
+**Kady Bezuidenhout**  
+> Christian. Creator. Code warrior. F1 fan.  
+> _“Start your engine, build your team, and race like a legend.”_
+
+---
+
+## ❤️ Acknowledgements
+
+- Inspired by the legends of Formula One
+- Sound effects and car images sourced from open resources
+- Guided by caffeine, grit, and God ✝️
+
+---
+
