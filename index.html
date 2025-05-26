@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 Dream Team</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="car-border">
+  <img src="images/f1car.png" alt="F1 Car" class="f1car" />
+</div>
+<body>
+  <div class="splash-screen" id="splash">
+    <h1>Kady's F1 Dream Garage</h1>
+    <button id="startBtn">Start Engine</button>
+  </div>
+
+  <div class="app hidden" id="app">
+    <h2>Build Your Dream Team</h2>
+    <div class="selectors">
+      <div class="section">
+        <button id="driverBtn">Pick Driver</button>
+        <p id="driverDisplay"></p>
+      </div>
+      <div class="section">
+        <button id="engineBtn">Pick Engine</button>
+        <p id="engineDisplay"></p>
+      </div>
+      <div class="section">
+        <button id="chassisBtn">Pick Chassis</button>
+        <p id="chassisDisplay"></p>
+      </div>
+    </div>
+    <button id="buildBtn">Build Team</button>
+    <div class="result" id="resultDisplay"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
