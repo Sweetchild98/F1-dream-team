@@ -6,7 +6,7 @@ Welcome to my interactive web app where YOU get to build your very own Formula O
 
 ## 🚀 Live Demo
 
-👉 [Click here to launch the app](https://sweetchild98.github.io/Testing1/)
+👉 [Click here to launch the app](https://sweetchild98.github.io/F1-dream-team/)
 
 ---
 
